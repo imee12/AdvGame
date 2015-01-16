@@ -116,3 +116,36 @@ if(player==="dude"){
 scores.push(roundTwo);
 
 /*SMILE OVER*/
+
+/*Tally points*/
+
+/*var scores =[];*/
+var arrayLength = scores.length;
+var sum = 0;
+var i;
+
+for(var i=0; i < arrayLength; i++){
+  sum+= parseInt(scores[i]);
+
+}
+
+console.log("TOTAL SCORE:" +  (sum));
+/*
+  sum =+ parseInt(scores[i]);
+  console.log("SCORE:" + ("scores[i]");
+}/*
+
+
+var scores = [];
+var
+var sum = 0;
+
+for(var i=0; i < nums.length; i++){
+
+  sum += parseInt(nums[i]);
+
+}
+
+alert(sum);
+
+*/
