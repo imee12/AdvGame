@@ -1,3 +1,4 @@
+
 console.log("Welcome!");
 
 var player=("chick", "dude")
@@ -19,12 +20,15 @@ console.log("You are going out for a night on the town with your boys.");
 }
 
 /*Put in playa (hard) or novice (easy)?*/
-
+/*
 console.log("We are going to keep score now. So get ready!")
 
 
 
 confirm("Are you ready?");
+
+
+/*GETTING DRESSED*/
 
 console.log("You are getting dressed.")
 
@@ -42,7 +46,7 @@ if(player==="dude"){
 
 
 
-var scores =[roundOne];
+var scores =[];
 
 if(player==="chick"){
 if(clothes==="A") {
@@ -54,9 +58,9 @@ if(clothes==="A") {
 }
 }
 
+scores.push(roundOne);
 
-
-
+/*
 if(player==="dude"){
   if(clothes==="A") {
     var roundOne=0;
@@ -65,4 +69,26 @@ if(player==="dude"){
     var roundOne=1;
     console.log("Perfect. Players don't look like they try to hard. SCORE=1!")
 }
+}*/
+/*GETTING DRESSED OVER*/
+
+var smile=("A","B")
+
+/*if(player==="chick"){*/
+console.log("You are with your friends and walk up to the bar.")
+
+var smile=prompt("There's hot dude there that gives you a big smile. You: A. Talk to your friends. B. Smile back.")
+
+
+/*var scores =[roundOne, roundTwo];*/
+
+/*if(player==="chick"){*/
+if(smile==="A") {
+  var roundTwo=1;
+  console.log("Good job! You don't want to seem desperate!");
+} else if(smile==="B") {
+  var roundTwo=0;
+  console.log("Might as well wear a sign that says: I'm lonely and sad.");
 }
+
+scores.push(roundTwo);
