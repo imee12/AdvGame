@@ -19,6 +19,13 @@ if(player==="dude") {
 console.log("You are going out for a night on the town with your boys.");
 }
 
+/*Put in playa (hard) or novice (easy)?*/
+
+console.log("We are going to keep score now. So get ready!")
+
+
+
+confirm("Are you ready?");
 
 console.log("You are getting dressed.")
 
