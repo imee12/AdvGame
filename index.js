@@ -51,16 +51,16 @@ var scores =[];
 if(player==="chick"){
 if(clothes==="A") {
   var roundOne=0;
-  console.log("You'll be the best dressed girl in the barn. Way to go! SCORE=0");
+  console.log("You'll be the best dressed girl in the barn. Way to go! POINTS=0");
 } else if(clothes==="B") {
   var roundOne=1;
-  console.log("Perfect! Players don't look like they try to hard. SCORE=1");
+  console.log("Perfect! Players don't look like they try to hard. POINTS=1");
 }
 }
 
-scores.push(roundOne);
 
-/*
+
+
 if(player==="dude"){
   if(clothes==="A") {
     var roundOne=0;
@@ -69,26 +69,50 @@ if(player==="dude"){
     var roundOne=1;
     console.log("Perfect. Players don't look like they try to hard. SCORE=1!")
 }
-}*/
+}
+
+scores.push(roundOne);
+
 /*GETTING DRESSED OVER*/
 
 var smile=("A","B")
 
-/*if(player==="chick"){*/
+
 console.log("You are with your friends and walk up to the bar.")
 
-var smile=prompt("There's hot dude there that gives you a big smile. You: A. Talk to your friends. B. Smile back.")
+
+if(player==="chick"){
+var smile=prompt("There's hot dude there that gives you a big smile. You: A. Talk to your friends. B. Smile back.")}
 
 
-/*var scores =[roundOne, roundTwo];*/
 
-/*if(player==="chick"){*/
+
+if(player==="chick"){
 if(smile==="A") {
   var roundTwo=1;
-  console.log("Good job! You don't want to seem desperate!");
+  console.log("Good job! You don't want to seem desperate! POINTS:1!");
 } else if(smile==="B") {
   var roundTwo=0;
-  console.log("Might as well wear a sign that says: I'm lonely and sad.");
+  console.log("Might as well wear a sign that says: I'm lonely and sad. POINTS:0!");
+}
 }
 
+if(player==="dude"){
+  var smile=prompt("There's hot chick there that gives you a big smile. You: A. Talk to your friends. B. Smile back.")}
+
+
+
+
+if(player==="dude"){
+    if(smile==="A") {
+      var roundTwo=1;
+      console.log("DUDE.Good job! You don't want to seem desperate! POINTS:1!");
+    } else if(smile==="B") {
+      var roundTwo=0;
+      console.log("DUDE.Might as well wear a sign that says: I'm lonely and sad. POINTS:0!");
+    }
+  }
+
 scores.push(roundTwo);
+
+/*SMILE OVER*/
