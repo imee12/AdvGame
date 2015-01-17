@@ -130,22 +130,88 @@ for(var i=0; i < arrayLength; i++){
 }
 
 console.log("TOTAL SCORE:" +  (sum));
-/*
-  sum =+ parseInt(scores[i]);
-  console.log("SCORE:" + ("scores[i]");
-}/*
 
+var drink=("A", "B")
 
-var scores = [];
-var
+console.log("The bartender asks you what you want to drink.")
+
+var drink=prompt("Do you: A: Order a water. B: Get a shot of tequila.")
+
+if(player==="chick"){
+  if(drink==="A") {
+    var roundThree=0;
+    console.log("Why did you even come out? No one likes a Debbie Downer! POINTS:0!");
+  } else if(smile==="B") {
+    var roundThree=1;
+    console.log("You're a party animal! POINTS:1!");
+  }
+}
+
+if(player==="dude"){
+  if(drink==="A") {
+    var roundThree=1;
+    console.log("Good job! You don't want to seem like you go out all the time. POINTS:1!");
+  } else if(drink==="B") {
+    var roundThree=0;
+    console.log("You blew it! This chick now thinks you have a drinking problem. POINTS:0!");
+  }
+}
+
+scores.push(roundThree);
+
+var arrayLength = scores.length;
 var sum = 0;
+var i;
 
-for(var i=0; i < nums.length; i++){
-
-  sum += parseInt(nums[i]);
+for(var i=0; i < arrayLength; i++){
+  sum+= parseInt(scores[i]);
 
 }
 
-alert(sum);
+console.log("TOTAL SCORE:" +  (sum));
 
-*/
+/*DRINK OVER*/
+
+var talk=("A", "B")
+
+if(player==="chick"){
+console.log("The hot dude starts to talk to you. What do you do?")
+}
+
+if(player==="dude"){
+  console.log("The hot chick starts to talk to you. What do you do?")
+}
+var drink=prompt("Do you: A: Listen intently. B: Listen but actively scan the room.")
+
+if(player==="chick"){
+  if(talk==="A") {
+    var roundFour=0;
+    console.log("Never ever let them think they are interesting!! POINTS:0!");
+  } else if(talk==="B") {
+    var roundFour=1;
+    console.log("You go, girl! Make him sweat! POINTS:1!");
+  }
+}
+
+if(player==="dude"){
+  if(talk==="A") {
+    var roundFour=1;
+    console.log("Awesome! Chicks love it when they think they are interesting! POINTS:1!");
+  } else if(talk==="B") {
+    var roundFour=0;
+    console.log("You must like sleeping alone. POINTS:0!");
+  }
+}
+
+scores.push(roundFour);
+
+var arrayLength = scores.length;
+var sum = 0;
+var i;
+
+for(var i=0; i < arrayLength; i++){
+  sum+= parseInt(scores[i]);
+
+}
+
+console.log("TOTAL SCORE:" +  (sum));
