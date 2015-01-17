@@ -20,12 +20,19 @@ console.log("You are going out for a night on the town with your boys.");
 }
 
 /*Put in playa (hard) or novice (easy)?*/
-/*
-console.log("We are going to keep score now. So get ready!")
+
+console.log("We are going to keep score now. So get ready!");
 
 
+var q;
+q = prompt("Are you ready?");
 
-confirm("Are you ready?");
+if (q == null) {
+  alert('No?! GAME OVER! Another night at home alone for you!');
+}
+else {
+  alert("Let's go!");
+}
 
 
 /*GETTING DRESSED*/
@@ -141,7 +148,7 @@ if(player==="chick"){
   if(drink==="A") {
     var roundThree=0;
     console.log("Why did you even come out? No one likes a Debbie Downer! POINTS:0!");
-  } else if(smile==="B") {
+  } else if(drink==="B") {
     var roundThree=1;
     console.log("You're a party animal! POINTS:1!");
   }
@@ -215,3 +222,113 @@ for(var i=0; i < arrayLength; i++){
 }
 
 console.log("TOTAL SCORE:" +  (sum));
+
+/*TALK OVER*/
+
+
+
+console.log("It's time for you to settle your bill. Your tab is: $85.")
+
+var tip=prompt("How much do you pay including tip?")
+
+if(player==="chick"){
+  if(tip>0) {
+    var roundFive=0;
+    console.log("Why are you paying?! POINTS:0!");
+  } else if(tip<=0) {
+    var roundFive=1;
+    console.log("He must be paying! EXCELLENT WORK! POINTS:1!");
+  }
+}
+
+if(player==="dude"){
+  if(tip>106.25) {
+    var roundFive=1;
+    console.log("Way to go! Chicks love generous dudes! POINTS:1!");
+  } else if(tip<106.25) {
+    var roundFive=0;
+    console.log("Last thing a girl needs is an ACD (Another Cheap Dude.) POINTS:0!");
+  }
+}
+
+scores.push(roundFive);
+
+var arrayLength = scores.length;
+var sum = 0;
+var i;
+
+for(var i=0; i < arrayLength; i++){
+  sum+= parseInt(scores[i]);
+
+}
+
+console.log("TOTAL SCORE:" +  (sum));
+
+/*TIP OVER*/
+
+console.log("It's the end of the night. The bartenders turn on the lights.")
+
+
+if(player==="chick"){
+  console.log("The hot dude asks you what you're doing after this.")
+}
+
+if(player==="chick"){
+var party=prompt("Do you: A: Invite him to an after party. B: Tell him you're going home.")}
+
+if(player==="dude"){
+  console.log("The hot chick asks you what you're doing after this.")
+}
+if(player=="dude"){
+var party=prompt("Do you: A: Invite her to an after party. B: Tell her you're going home.")
+}
+if(player==="chick"){
+  if(party==="A") {
+    var roundSix=1;
+    console.log("Great work! Sly way of letting him know you wanna hang out, but not in a slutty way. POINTS:1!")
+  } else if(party==="B") {
+    var roundSix=0;
+    console.log("You're boring. POINTS:0!");
+  }
+}
+
+if(player==="dude"){
+  if(party==="A") {
+    var roundSix=0;
+    console.log("What are you thinking?! Just ask the girl for her number. Now, she thinks you're way into her! POINTS:0!");
+  } else if(party==="B") {
+    var roundSix=1;
+    console.log("Good move. Just get her number. Call her in five days. POINTS:1!");
+  }
+}
+
+scores.push(roundSix);
+
+var arrayLength = scores.length;
+var sum = 0;
+var i;
+
+for(var i=0; i < arrayLength; i++){
+  sum+= parseInt(scores[i]);
+
+}
+
+console.log("TOTAL SCORE:" +  (sum));
+
+/*PARTY OVER*/
+
+if(player==="chick"){
+if(sum>=6) {
+  console.log("You've made wise decisions as a professional player, you eventually win over this dude and dump him in a week. This scenario will continue over and over until you die. Alone. You win at this game but lose at life. CONGRATULATIONS!")
+}else if(sum<6){
+  console.log("Okay. So you're not the biggest player. Tonight, you went home alone and watched Netflix. No big deal. Netflix loves you back.")
+}
+}
+
+if(player==="dude"){
+if(sum>=6) {
+  console.log("You've made wise decisions as a professional player, you eventually win over this dude and dump her in a week. This scenario will continue over and over until you die. Alone. You win at this game but lose at life. CONGRATULATIONS!")
+}else if (sum<6) {
+  console.log("Okay. So you're not the biggest player. Tonight, you ate late night pizza with the boys. Who needs chicks anyway?!")
+}
+}
